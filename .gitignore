@@ -9,4 +9,4 @@ target/*
 local_settings.py
 site_media/*
 var/*
-smlauth.db
+smluser.db
