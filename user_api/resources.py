@@ -1,3 +1,4 @@
+from tastypie.authorization import Authorization
 from tastypie.resources import ModelResource
 from user_api.models import User
 
@@ -9,3 +10,4 @@ class UserResource(ModelResource):
         include_resource_uri = False
         allowed_methods = ['get', 'post', 'put']
         excludes = ['auth_id']
+        authorization = Authorization()
